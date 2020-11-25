@@ -18,7 +18,7 @@ let package = Package(
          .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0"))
     ],
     targets: [
-        .target(name: "ErrorHandler", dependencies: ["Alamofire"], path: "./ErrorHandler"),
+        .target(name: "ErrorHandler", dependencies: [], path: "./ErrorHandler"),
         .testTarget(name: "ErrorHandlerTests", dependencies: ["ErrorHandler"], path: "./Example/Tests")
     ],
     swiftLanguageVersions: [.v4_2, .v5]
